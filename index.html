@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Clientes</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    .linha {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Cadastrar Cliente</h2>
+
+  <div class="linha">
+    <input type="text" id="nomeCliente" placeholder="Digite o nome do cliente">
+    <button onclick="cadastrarCliente()">Cadastrar Cliente</button>
+  </div>
+
+  <ul id="listaClientes"></ul>
+
+  <div class="linha">
+    <button onclick="listarClientes()">Listar Clientes</button>
+    <button onclick="excluirClientes()">Excluir Cliente</button>
+  </div>
+
+</body>
+</html>

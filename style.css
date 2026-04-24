@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: #f1f1f1;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+body > * {
+    max-width: 400px;
+    width: 100%;
+}
+
+.linha {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+input#nomeCliente {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background-color: #0f0f0f;
+    color: #f1f1f1;
+    font-size: 1rem;
+    text-align: center;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input#nomeCliente::placeholder {
+    color: #aaaaaa;
+}
+
+input#nomeCliente:focus {
+    border-color: #f1f1f1;
+    box-shadow: 0 0 5px rgba(241, 241, 241, 0.6);
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    color: #0f0f0f;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    white-space: nowrap;
+}
+
+button:hover {
+    background-color: #dcdcdc;
+    transform: translateY(-2px);
+}
+
+ul {
+    list-style: none;
+    padding: 15px;
+    width: 100%;
+    background-color: #272727;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+li {
+    padding: 8px;
+    border-bottom: 1px solid #333;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li:hover {
+    background-color: #2a2a2a;
+}
